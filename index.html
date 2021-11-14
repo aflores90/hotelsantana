@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BizLand Bootstrap Template - Index</title>
+  <title>Hotel Santana Petén</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -37,30 +37,35 @@
 
 <body>
 
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></i></a>
-      </div>
-    </div>
-  </section>
 
-  
+
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
+
+    <div class="social-media d-flex">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+          <div class="contact-info d-flex align-items-center">
+          </div>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://www.facebook.com/santanapeten" target="_blank" class="facebook me-3"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/hotel.santana/?hl=es" target="_blank" class="instagram me-3"><i class="bi bi-instagram"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=50255161149&fbclid=IwAR3eletWBybYndEXWFSj6HfOC7LhspPWFxFA6wksicO3_-ugqhjnVC4hewI" target="_blank" class="whatsapp me-3"><i class="bi bi-whatsapp"></i></i></a>
+        </div>
+      </div>
+    </div>
+
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
 
-        <h1 class="logo"><a href="index.html">BizLand<span>.</span></a></h1>
+        <h1 class="logo">
+          <a id="logo" href="index.html">
+            <img src="assets/img/logo.png">
+          </a>
+        </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
 
@@ -70,15 +75,10 @@
             <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
             <li><a class="nav-link scrollto" href="#services">Amenidades</a></li>
             <li><a class="nav-link scrollto" href="#gallery">Galería</a></li>
+            <li id="li-logo" class="d-none"><a class="nav-link logo-menu" href="index.html"><img src="assets/img/logo_menu.png"></a></li>
             <li><a class="nav-link scrollto " href="#testimonials">Testimonios</a></li>
             <li><a class="nav-link scrollto " href="#faq">FAQ</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
-            <li class="dropdown"><a href="#"><span>Idioma</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="#">Ingles</a></li>
-                <li><a href="#">Español</a></li>
-              </ul>
-            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -89,6 +89,29 @@
 
 
     <div class="booking" data-aos="zoom-out" data-aos-delay="100">
+      <form id="my-form">
+        <div class="row">
+          <div class="col-lg-2 offset-lg-1">
+            <label class="form-label text-center w-100">Llegada</label>
+            <input class="form-control" type="date" name="checkin" id="checkin" />
+          </div>
+          <div class="col-lg-2">
+            <label class="form-label text-center w-100">Salida</label>
+            <input class="form-control" type="date" name="checkout" id="checkout" />
+          </div>
+          <div class="col-lg-2">
+            <label class="form-label text-center w-100">Adultos</label>
+            <input class="form-control" type="number" name="adults" min="1" value="1" />
+          </div>
+          <div class="col-lg-2">
+            <label class="form-label text-center w-100">Niños</label>
+            <input class="form-control" type="number" name="kids" min="0" value="0" />
+          </div>
+          <div class="col-lg-2 offset-lg-1">
+            <button type="submit" class="btn btn-warning">Buscar<br/>Disponibilidad</button>
+          </div>
+        </div>
+      </form>
     </div>
   </section><!-- End Hero -->
 
@@ -99,9 +122,9 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About</h2>
           <h1>HOTEL<br>SANTANA</h1>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          <p>Estamos ubicados a orillas del lago en la colorida Isla de Flores, Petén. Contamos con amplias y cómodas instalaciones que te hacen sentir como en casa disfrutando de los mejores atardeceres. Con más de 30 años al servicio de nuestros clientes.</p>
+          <p>Comprometidos para ser parte de tu aventura en Petén y diseñados para brindarte un ambiente seguro y relajado. ¡Somos tu mejor opción para vivir la magia y el misterio de la cultura maya!</p>
         </div>
       </div>
     </section><!-- End About Section -->
@@ -111,59 +134,66 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Amenidades</h2>
-          <h3>NUESTRAS AMENIDADES</h3>
+          <h1>NUESTRAS AMENIDADES</h1>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        <div class="row" id="amenidades">
+          <div class="col-lg-5 offset-lg-1">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="assets/img/amenidades/amenidad01.png">
+              </div>
+              <div class="col-lg-10">Restaurante y Bar con vista al lago</div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="assets/img/amenidades/amenidad02.png">
+              </div>
+              <div class="col-lg-10">Habitaciones con balcón privado</div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="assets/img/amenidades/amenidad03.png">
+              </div>
+              <div class="col-lg-10">Room service</div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="assets/img/amenidades/amenidad04.png">
+              </div>
+              <div class="col-lg-10">Piscina</div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="assets/img/amenidades/amenidad05.png">
+              </div>
+              <div class="col-lg-10">Tours</div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="assets/img/amenidades/amenidad06.png">
+              </div>
+              <div class="col-lg-10">Wi-fi gratis en todas las áreas</div>
             </div>
           </div>
-
+          <div class="col-lg-5 offset-lg-1">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="assets/img/amenidades/amenidad07.png">
+              </div>
+              <div class="col-lg-10">Servicio de lavandería</div>
+            </div>
+          </div>
         </div>
 
       </div>

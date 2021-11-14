@@ -82,6 +82,8 @@
    * Header fixed top on scroll
    */
   let selectHeader = select('#header')
+  let selectLogo = select('#logo')
+  let selectLogoMenu = select('#li-logo')
   if (selectHeader) {
     let headerOffset = selectHeader.offsetTop
     let nextElement = selectHeader.nextElementSibling
@@ -89,9 +91,13 @@
       if ((headerOffset - window.scrollY) <= 0) {
         selectHeader.classList.add('fixed-top')
         nextElement.classList.add('scrolled-offset')
+        selectLogo.classList.add('d-none')
+        selectLogoMenu.classList.remove('d-none')
       } else {
         selectHeader.classList.remove('fixed-top')
         nextElement.classList.remove('scrolled-offset')
+        selectLogo.classList.remove('d-none')
+        selectLogoMenu.classList.add('d-none')
       }
     }
     window.addEventListener('load', headerFixed)
@@ -278,6 +284,38 @@
       once: true,
       mirror: false
     })
+
+    const n =  new Date();
+    const y = n.getFullYear();
+    const m = (n.getMonth().length == 1) ? '0' : '' + (n.getMonth() + 1);
+    const d = (n.getDate().length == 1) ? '0' : '' + n.getDate();
+    document.getElementById("checkin").value = y + "-" + m + "-" + d;
+    const nn =  new Date();
+    nn.setDate(nn.getDate() + 2)
+    const yy = nn.getFullYear();
+    const mm = (nn.getMonth().length == 1) ? '0' : '' + (nn.getMonth() + 1);
+    const dd = (nn.getDate().length == 1) ? '0' : '' + nn.getDate();
+    document.getElementById("checkout").value = yy + "-" + mm + "-" + dd;
   });
 
 })()
+
+
+
+function processForm(e) {
+  if (e.preventDefault) e.preventDefault();
+  window.open('https://hotels.cloudbeds.com/reservation/WNIxby'
+      + '#checkin=' + e.target.checkin.value
+      + "&checkout=" + e.target.checkout.value
+      + "&adults=" + e.target.adults.value
+      + "&kids=" + e.target.kids.value,'_blank')
+
+  return false;
+}
+
+var form = document.getElementById('my-form');
+if (form.attachEvent) {
+  form.attachEvent("submit", processForm);
+} else {
+  form.addEventListener("submit", processForm);
+}
