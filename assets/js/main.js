@@ -206,18 +206,45 @@
    * Testimonials slider
    */
   new Swiper('.testimonials-slider', {
-    speed: 600,
+    spaceBetween: 50,
+    speed: 1000,
     loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
     },
-    slidesPerView: 'auto',
+    slidesPerView: 2,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
     }
+  });
+
+  /**
+   * Galeria slider
+   */
+  new Swiper('.gallery-slider', {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
   });
 
   /**
