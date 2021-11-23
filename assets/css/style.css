@@ -6,7 +6,7 @@
 */
 @font-face {
   font-family: hatton;
-  src: url('../fonth/Hatton-Medium.otf'),
+  src: url('../font/Hatton-Medium.otf'),
       url("../font/Hatton-Semibold.otf"),
       url("../font/Hatton-Ultralight.otf");
 }
@@ -19,7 +19,7 @@ body {
   color: #444444;
 }
 
-a {
+a {/**/
   color: #9ECDC7;
   text-decoration: none;
 }
@@ -88,10 +88,10 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #106eea;
+  background: #EAAD00;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #3284f1;
+  background: #EAAD00;
   color: #fff;
 }
 .back-to-top.active {
@@ -1457,21 +1457,21 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444444;
+  color: white;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   padding: 20px 0 30px 0;
 }
 .contact .info-box i {
   font-size: 32px;
-  color: #106eea;
+  color: white;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #b3d1fa;
 }
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: white;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1540,7 +1540,7 @@ section {
   padding: 12px 15px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #106eea;
+  background: #EAAD00;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1548,7 +1548,7 @@ section {
   border-radius: 4px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #3b8af2;
+  background: #EAAD00;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1624,7 +1624,8 @@ section {
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: gray;
+  color: white;
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -1644,7 +1645,7 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: white;
 }
 #footer .footer-top h4 {
   font-size: 16px;
@@ -1652,6 +1653,7 @@ section {
   color: #444444;
   position: relative;
   padding-bottom: 12px;
+  color: white;
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
@@ -1663,7 +1665,7 @@ section {
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #106eea;
+  color: white;
   font-size: 18px;
   line-height: 1;
 }
@@ -1675,19 +1677,23 @@ section {
   padding-top: 0;
 }
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: white;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #106eea;
+  color: #eaad00;
+}
+#footer .footer-top .footer-links ul li:hover i {
+  text-decoration: none;
+  color: #eaad00;
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #106eea;
+  background: #9ECDC7;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1699,7 +1705,7 @@ section {
   transition: 0.3s;
 }
 #footer .footer-top .social-links a:hover {
-  background: #3b8af2;
+  background: #EAAD00;
   color: #fff;
   text-decoration: none;
 }
@@ -1853,4 +1859,24 @@ section {
   background-color: #EAAD00;
   color: white;
   font-size: 1.1em;
+}
+#contact-header{
+  background-color: #94973C;
+  color: white;
+  padding-top: 10px;
+}
+.php-email-form .form-control{
+
+}
+.php-email-form .form-control:focus{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+
+  outline: none;
+  box-shadow: 0 0 10px #94973C;
+}
+*:focus {
+  outline: none;
 }
