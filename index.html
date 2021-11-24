@@ -35,10 +35,6 @@
 </head>
 
 <body>
-
-
-
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
@@ -74,7 +70,6 @@
             <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
             <li><a class="nav-link scrollto" href="#services">Amenidades</a></li>
             <li><a class="nav-link scrollto " href="#testimonials">Testimonios</a></li>
-            <li id="li-logo" class="d-none"><a class="nav-link logo-menu" href="#hero"><img src="assets/img/logo_menu.png"></a></li>
             <li><a class="nav-link scrollto" href="#gallery">Galería</a></li>
             <li><a class="nav-link scrollto " href="#faq">FAQ</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
@@ -90,24 +85,27 @@
     <div class="booking" data-aos="zoom-out" data-aos-delay="100">
       <form id="my-form">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 offset-xl-0 offset-lg-1 offset-sm-1 offset-md-1 input-booking">
             <label class="form-label text-center w-100">Llegada</label>
             <input class="form-control" type="date" name="checkin" id="checkin" />
           </div>
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 input-booking">
             <label class="form-label text-center w-100">Salida</label>
             <input class="form-control" type="date" name="checkout" id="checkout" />
           </div>
-          <div class="col-lg-2">
+          <div class="col-xl-2 col-lg-2 form-hide">
             <label class="form-label text-center w-100">Adultos</label>
             <input class="form-control" type="number" name="adults" min="1" value="1" />
           </div>
-          <div class="col-lg-2">
+          <div class="col-xl-2 col-lg-2 form-hide">
             <label class="form-label text-center w-100">Niños</label>
             <input class="form-control" type="number" name="kids" min="0" value="0" />
           </div>
-          <div class="col-lg-2">
-            <button type="submit" class="btn btn-warning">Buscar<br/>Disponibilidad</button>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 input-booking-button">
+            <button type="submit" class="btn btn-warning">
+              <i class="bi bi-search"></i>
+              <span>Buscar<br/>Disponibilidad</span>
+            </button>
           </div>
         </div>
       </form>
@@ -138,60 +136,32 @@
 
         <div class="row" id="amenidades">
           <div class="col-lg-5 offset-lg-1">
-            <div class="row">
-              <div class="col-lg-2">
-                <img src="assets/img/amenidades/amenidad01.png">
-              </div>
-              <div class="col-lg-10">Restaurante y Bar con vista al lago</div>
-            </div>
+            <img src="assets/img/amenidades/amenidad01.png">
+            Restaurante y Bar con vista al lago
           </div>
           <div class="col-lg-5">
-            <div class="row">
-              <div class="col-lg-2">
-                <img src="assets/img/amenidades/amenidad02.png">
-              </div>
-              <div class="col-lg-10">Habitaciones con balcón privado</div>
-            </div>
+            <img src="assets/img/amenidades/amenidad02.png">
+            Habitaciones con balcón privado
           </div>
           <div class="col-lg-5 offset-lg-1">
-            <div class="row">
-              <div class="col-lg-2">
-                <img src="assets/img/amenidades/amenidad03.png">
-              </div>
-              <div class="col-lg-10">Room service</div>
-            </div>
+            <img src="assets/img/amenidades/amenidad03.png">
+            Room service
           </div>
           <div class="col-lg-5">
-            <div class="row">
-              <div class="col-lg-2">
-                <img src="assets/img/amenidades/amenidad04.png">
-              </div>
-              <div class="col-lg-10">Piscina</div>
-            </div>
+            <img src="assets/img/amenidades/amenidad04.png">
+            Piscina
           </div>
           <div class="col-lg-5 offset-lg-1">
-            <div class="row">
-              <div class="col-lg-2">
-                <img src="assets/img/amenidades/amenidad05.png">
-              </div>
-              <div class="col-lg-10">Tours</div>
-            </div>
+            <img src="assets/img/amenidades/amenidad05.png">
+            Tours
           </div>
           <div class="col-lg-5">
-            <div class="row">
-              <div class="col-lg-2">
-                <img src="assets/img/amenidades/amenidad06.png">
-              </div>
-              <div class="col-lg-10">Wi-fi gratis en todas las áreas</div>
-            </div>
+            <img src="assets/img/amenidades/amenidad06.png">
+            Wi-fi gratis en todas las áreas
           </div>
           <div class="col-lg-5 offset-lg-1">
-            <div class="row">
-              <div class="col-lg-2">
-                <img src="assets/img/amenidades/amenidad07.png">
-              </div>
-              <div class="col-lg-10">Servicio de lavandería</div>
-            </div>
+            <img src="assets/img/amenidades/amenidad07.png">
+            Servicio de lavandería
           </div>
         </div>
 
@@ -498,7 +468,7 @@
         <div class="row" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-6 ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.286273245706!2d-89.89375737311349!3d16.928966691952606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5f8cdbe67aef2b%3A0x8ecbc4fb1c489c29!2sHotel%20Santana!5e1!3m2!1ses-419!2sgt!4v1637638256434!5m2!1ses-419!2sgt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.286273245706!2d-89.89375737311349!3d16.928966691952606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5f8cdbe67aef2b%3A0x8ecbc4fb1c489c29!2sHotel%20Santana!5e1!3m2!1ses-419!2sgt!4v1637638256434!5m2!1ses-419!2sgt" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
 
           <div class="col-lg-6">
@@ -553,11 +523,11 @@
           <div class="col-lg-4 col-md-6 footer-contact">
             <h3>Hotel Santan Petén</h3>
             <p>
-              Calle 30 de junio playa<br/>
+              <i class="bi bi-geo-alt-fill"></i>Calle 30 de junio playa<br/>
               poniente Flores Petén<br/>
               17001-Flores, Guatemala<br>
-              <strong>Teléfono:</strong> +502 7867-5124<br>
-              <strong>Correo:</strong> info@santana-hotel.com<br>
+              <i class="bi bi-telephone-fill"></i><strong>Teléfono:</strong> +502 7867-5124<br>
+              <i class="bi bi-envelope-fill"></i><strong>Correo:</strong> info@santana-hotel.com<br>
             </p>
           </div>
 

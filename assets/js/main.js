@@ -83,7 +83,6 @@
    */
   let selectHeader = select('#header')
   let selectLogo = select('#logo')
-  let selectLogoMenu = select('#li-logo')
   if (selectHeader) {
     let headerOffset = selectHeader.offsetTop
     let nextElement = selectHeader.nextElementSibling
@@ -92,12 +91,10 @@
         selectHeader.classList.add('fixed-top')
         nextElement.classList.add('scrolled-offset')
         selectLogo.classList.add('d-none')
-        selectLogoMenu.classList.remove('d-none')
       } else {
         selectHeader.classList.remove('fixed-top')
         nextElement.classList.remove('scrolled-offset')
         selectLogo.classList.remove('d-none')
-        selectLogoMenu.classList.add('d-none')
       }
     }
     window.addEventListener('load', headerFixed)
@@ -202,6 +199,10 @@
     })
   }
 
+  const w = window.innerWidth;
+  let sliders = 2
+  if(w <= 750)
+    sliders = 1
   /**
    * Testimonials slider
    */
@@ -213,7 +214,7 @@
       delay: 5000,
       disableOnInteraction: false
     },
-    slidesPerView: 2,
+    slidesPerView: sliders,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
