@@ -1921,3 +1921,6 @@ section {
   font-size: 14px;
   margin-right: 5px;
 }
+iframe{
+  min-height: 400px;
+}
