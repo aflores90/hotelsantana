@@ -1383,7 +1383,7 @@ section {
   background-color: white;
   position: relative;
 }
-.faq:before{
+.faq:after{
   content: "";
   width: 352px;
   height: 219px;
@@ -1391,6 +1391,15 @@ section {
   bottom: 0;
   right: 5%;
   background: url("../img/hs/faq/hoja_derecha.png");
+}
+.faq:before{
+  content: "";
+  width: 392px;
+  height: 486px;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  background: url("../img/hs/faq/hoja_izquierda.png");
 }
 .faq .faq-list {
   padding: 0;
