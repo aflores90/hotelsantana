@@ -5,6 +5,11 @@
 * License: https://bootstrapmade.com/license/
 */
 @font-face {
+  font-family: arboria;
+  src: url('../font/Arboria-Bold.ttf')
+}
+
+@font-face {
   font-family: hatton;
   src: url('../font/Hatton-Medium.otf'),
       url("../font/Hatton-Semibold.otf"),
@@ -15,7 +20,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "hatton", sans-serif;
+  font-family: "arobia", sans-serif;
   color: #444444;
 }
 
@@ -442,7 +447,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #222222;
-  font-family: "Poppins", sans-serif;
+  font-family: "hatton", sans-serif;
 }
 #hero h1 span {
   color: #106eea;
@@ -454,7 +459,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: "hatton", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
@@ -692,21 +697,29 @@ section {
 }
 #about:before{
   content: "";
-  width: 393px;
+  width: 290px;
   height: 260px;
   position: absolute;
   top: 0;
   left: 0;
   background: url("../img/hs/hoja_nosotros_izquierda.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #about .container:before{
   content: "";
-  width: 265px;
-  height: 260px;
+  width: 210px;
+  height: 207px;
   position: absolute;
   bottom: -15%;
-  right: -15%;
+  right: 0;
   background: url("../img/hs/hoja_nosotrs_derecha.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .about .content h3 {
   font-weight: 600;
@@ -755,6 +768,97 @@ section {
   font-size: 20px;
   line-height: 4em;
 }
+
+/*--------------------------------------------------------------
+# Habitaciones
+--------------------------------------------------------------*/
+.rooms{
+  color: #9ECDC7;
+  padding-bottom: 0;
+}
+.room-desc img{
+  width: 100%;
+}
+.room-desc p{
+  color: #EAAD00;
+  text-align: center;
+  line-height: 2.50em;
+  font-size: 32px;
+  font-family: "hatton", serif;
+}
+.divider{
+  color: #EAAD00;
+}
+.rooms-slider {
+  width: 100%;
+  height: 100%;
+}
+.rooms-slider .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  padding-bottom: 45px;
+}
+.rooms-slider .swiper-slide .col-lg-12{
+  text-align: left;
+}
+.rooms-slider .swiper-slide .col-lg-6{
+  margin-top: 30px;
+}
+.rooms-slider .swiper-slide .col-lg-5{
+  color: #94973C;
+  font-size: 25px;
+}
+.rooms-slider .swiper-slide .button{
+  margin-top: 30px;
+  text-align: center;
+}
+.rooms-slider .swiper-slide button{
+  background-color: #9ECDC7;
+  color: white;
+}
+.rooms-slider .swiper-slide h1{
+  color: #EAAD00;
+  margin-bottom: 40px;
+}
+.rooms-slider .swiper-slide p{
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.rooms-slider .swiper-slide p:last-child{
+  color: #EAAD00;
+}
+.rooms-slider .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.rooms-slider .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -1302,7 +1406,7 @@ section {
   font-size: 36px;
   color: #106eea;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "hatton", sans-serif;
   margin-bottom: 20px;
 }
 .pricing .box h4 sup {
@@ -1385,21 +1489,29 @@ section {
 }
 .faq:after{
   content: "";
-  width: 352px;
-  height: 219px;
+  width: 234px;
+  height: 145px;
   position: absolute;
   bottom: 0;
   right: 5%;
   background: url("../img/hs/faq/hoja_derecha.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .faq:before{
   content: "";
-  width: 392px;
-  height: 486px;
+  width: 262px;
+  height: 318px;
   position: absolute;
   top: 5%;
   left: 0;
   background: url("../img/hs/faq/hoja_izquierda.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .faq .faq-list {
   padding: 0;
@@ -1654,7 +1766,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "arboria", sans-serif;
   color: white;
 }
 #footer .footer-top h4 {
@@ -1738,12 +1850,12 @@ section {
 
 .booking {
   position: absolute;
-  width: 80%;
+  width: 100%;
   height: 160px;
-  background-color: #9ECDC7;
   bottom: 0;
-  left: 10%;
-  padding: 0px 0px 10px 20px;
+}
+.booking .container{
+  background-color: #9ECDC7;
 }
 .input-booking-button i{
   display: none;
@@ -1932,4 +2044,15 @@ section {
 }
 iframe{
   min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  #about:before,
+  #about .container:before,
+  #gallery:before,
+  #gallery .container:before,
+  .faq:after,
+  .faq:before{
+    background: none;
+  }
 }

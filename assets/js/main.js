@@ -223,6 +223,23 @@
   });
 
   /**
+   * Rooms slider
+   */
+  const swiper = new Swiper('.rooms-slider', {});
+  document
+      .querySelector('.btn-amenidades')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(1, 0);
+      });
+  document
+      .querySelector('.btn-rooms')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(0, 0);
+      });
+
+  /**
    * Galeria slider
    */
   new Swiper('.gallery-slider', {

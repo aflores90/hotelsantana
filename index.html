@@ -83,32 +83,34 @@
 
 
     <div class="booking" data-aos="zoom-out" data-aos-delay="100">
-      <form id="my-form">
-        <div class="row">
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 offset-xl-0 offset-lg-1 offset-sm-1 offset-md-1 input-booking">
-            <label class="form-label text-center w-100">Llegada</label>
-            <input class="form-control" type="date" name="checkin" id="checkin" />
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 input-booking">
-            <label class="form-label text-center w-100">Salida</label>
-            <input class="form-control" type="date" name="checkout" id="checkout" />
-          </div>
-          <div class="col-xl-2 col-lg-2 form-hide">
-            <label class="form-label text-center w-100">Adultos</label>
-            <input class="form-control" type="number" name="adults" min="1" value="1" />
-          </div>
-          <div class="col-xl-2 col-lg-2 form-hide">
-            <label class="form-label text-center w-100">Niños</label>
-            <input class="form-control" type="number" name="kids" min="0" value="0" />
-          </div>
-          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 input-booking-button">
-            <button type="submit" class="btn btn-warning">
-              <i class="bi bi-search"></i>
-              <span>Buscar<br/>Disponibilidad</span>
-            </button>
-          </div>
-        </div>
-      </form>
+     <div class="container">
+       <form id="my-form">
+         <div class="row">
+           <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 offset-xl-0 offset-lg-1 offset-sm-1 offset-md-1 input-booking">
+             <label class="form-label text-center w-100">Llegada</label>
+             <input class="form-control" type="date" name="checkin" id="checkin" />
+           </div>
+           <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 input-booking">
+             <label class="form-label text-center w-100">Salida</label>
+             <input class="form-control" type="date" name="checkout" id="checkout" />
+           </div>
+           <div class="col-xl-2 col-lg-2 form-hide">
+             <label class="form-label text-center w-100">Adultos</label>
+             <input class="form-control" type="number" name="adults" min="1" value="1" />
+           </div>
+           <div class="col-xl-2 col-lg-2 form-hide">
+             <label class="form-label text-center w-100">Niños</label>
+             <input class="form-control" type="number" name="kids" min="0" value="0" />
+           </div>
+           <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 input-booking-button pe-0">
+             <button type="submit" class="btn btn-warning">
+               <i class="bi bi-search"></i>
+               <span>Buscar<br/>Disponibilidad</span>
+             </button>
+           </div>
+         </div>
+       </form>
+     </div>
     </div>
   </section><!-- End Hero -->
 
@@ -168,9 +170,151 @@
       </div>
     </section><!-- End Services Section -->
 
+    <!-- ======= Services Section ======= -->
+    <section id="rooms" class="rooms">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h1 style="color: #EAAD00">Habitaciones</h1>
+          <p>Hotel Santana cuenta con más de 32 amplias habitaciones y cada una cuenta con todos los servicios y comodidades para que puedas disfrutar de tu estancia en Flores, Petén</p>
+        </div>
+
+        <div class="row room-desc">
+          <div class="col-lg-4">
+            <img src="assets/img/rooms/habitacion_01.png" />
+            <p>Habitación simple</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="assets/img/rooms/habitacion_02.png" />
+            <p>Habitación simple</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="assets/img/rooms/habitacion_03.png" />
+            <p>Habitación simple</p>
+          </div>
+        </div>
+
+        <hr class="divider" size="3" />
+
+        <div class="swiper rooms-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-amenidades">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h1>Balcony rooms</h1>
+                  <p>
+                    Nuestras habitaciones en esta categoría cuentan con increíble vista al lago para que puedas disfrutar de los mejores atardeceres de la Isla desde la hamaca de tu balcón privado. ¡Una experiencia petenera que no querrás perderte!
+                  </p>
+                  <p>Disponible para habitaciones sencillas, dobles y triples</p>
+                </div>
+                <div class="col-lg-6">
+                  <img src="assets/img/rooms/balcony.png">
+                </div>
+
+                <div class="col-lg-6">
+                  <img src="assets/img/rooms/standar.png">
+                </div>
+                <div class="col-lg-6">
+                  <h1>Standard rooms</h1>
+                  <p>
+                    Nuestras habitaciones en esta categoría tienen vista al anillo interno de la Isla en donde podrás disfrutar de todas las comodidades para que disfrutes de una estancia cómoda y relajante.
+                  </p>
+                  <p>Disponible para habitaciones sencillas, dobles, triples y familiares</p>
+                </div>
+                <div class="col-lg-12 button">
+                  <button type="button" class="btn btn-amenidades">
+                    Amenidades
+                    <i class="bi bi-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-lg-5 offset-1">
+                  <h1>In Room - Amenities</h1>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v1.png">
+                    Caja fuerte
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v2.png">
+                    TV con cable
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v3.png">
+                    Aire acondicionado
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v4.png">
+                    Ventilador
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v5.png">
+                    Agua pura
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v6.png">
+                    Wi-fi
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v7.png">
+                    Percheros
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v8.png">
+                    Blancos
+                  </div>
+                </div>
+
+                <div class="col-lg-5 offset-1">
+                  <h1>In Bathroom - Amenities</h1>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v10.png">
+                    Toallas 100% algodón
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v11.png">
+                    Ducha con agua caliente
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v12.png">
+                    Shampoo y body wash
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v13.png">
+                    Papel higiénico
+                  </div>
+                </div>
+
+                <div class="col-lg-5 offset-1" style="margin-top: 20px">
+                  <h1>Categoría blacony room</h1>
+                  <div class="col-lg-12">
+                    <img src="assets/img/rooms/amenities/icon_v9.png">
+                    Hamaca en balcón privado
+                  </div>
+                </div>
+
+                <div class="col-lg-12 button">
+                  <button type="button" class="btn btn-rooms">
+                    <i class="bi bi-arrow-left"></i>
+                    Habitaciones
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+
+      </div>
+    </section><!-- End Services Section -->
+
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="zoom-in">
+      <div class="container" data-aos="fade-up">
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
