@@ -573,7 +573,6 @@ section {
 }
 .section-title p {
   margin: 15px auto 0 auto;
-  font-weight: 600;
   font-size: 22px;
 }
 @media (min-width: 1024px) {
